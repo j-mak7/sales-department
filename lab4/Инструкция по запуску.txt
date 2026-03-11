@@ -1,0 +1,11 @@
+Инструкция по запуску:
+1. Создать папку проекта и поместить туда fill_db.py
+2. Если не установлены необходимые зависимости, то устанавливаем pip install psycopg2 faker python-dotenv
+3. В этой же папке создать файл .env, в котором прописать свои параметры для подключения к базе данных в формате
+DB_HOST=localhost
+DB_NAME=my_db
+DB_USER=my_user
+DB_PASSWORD=my_password
+4. Создать/пересоздать базу данных psql -U my_user -d my_db -f "path_to_script\create_table.sql"
+5. Заполнить таблицы начальными тестовыми данными psql -U my_user -d my_db -f "path_to_script\insert_data.sql"
+6. Запустить скрипт генерации тестовых данных python fill_db.py
