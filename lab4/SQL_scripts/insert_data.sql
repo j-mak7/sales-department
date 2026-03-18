@@ -44,13 +44,13 @@ INSERT INTO money_unit (name_unit, country_unit, information) VALUES
     ('CHF', 'CH', 'Швейцарский франк');
 
 INSERT INTO course_money_unit (id_unit, date_course, rate_value) VALUES
-    (1, CURRENT_DATE, 1.00000000),   -- RUB
-    (2, CURRENT_DATE, 92.50000000),  -- USD
-    (3, CURRENT_DATE, 99.80000000),  -- EUR
-    (4, CURRENT_DATE, 12.75000000),  -- CNY
-    (5, CURRENT_DATE, 116.30000000), -- GBP
-    (6, CURRENT_DATE, 0.62000000),   -- JPY
-    (7, CURRENT_DATE, 105.20000000); -- CHF
+    (1, CURRENT_DATE, 1.00000000),
+    (2, CURRENT_DATE, 92.50000000),
+    (3, CURRENT_DATE, 99.80000000),
+    (4, CURRENT_DATE, 12.75000000), 
+    (5, CURRENT_DATE, 116.30000000),
+    (6, CURRENT_DATE, 0.62000000),
+    (7, CURRENT_DATE, 105.20000000);
 
 INSERT INTO course_money_unit (id_unit, date_course, rate_value) VALUES
     (2, CURRENT_DATE - INTERVAL '7 days', 91.80000000),
